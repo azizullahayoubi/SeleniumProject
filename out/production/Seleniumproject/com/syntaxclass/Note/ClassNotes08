@@ -1,0 +1,50 @@
+Class 8
+
+Implicit wait
+will be applied for findElement() method
+
+Explicit Wait or WebDriver wait:
+is used to tell the webdriver to wait for a certain condition
+before throwing an "ElementNotVisibleException"
+
+Explicit wait works with ExpectedConditions class and
+waits until certain conditions are met or the given time is achieved
+
+
+Fluent wait --> global wait
+it is used to tell webdriver to wait for certain condition as well as its frequency
+before throwing "ElementNotVisibleException"
+
+WebTables:
+WebTables are elements in UI, which constructed by having
+rows and columns
+
+
+Types of webtables:
+1. Static webtable
+2. dynamic webtable
+
+WebTables consist of different sections or parts:
+<table>
+        <thead>
+                <tr>
+                    <th></th> --> column data
+                </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td></td> --> table data
+                </tr>
+        </tbody>
+</table>
+
+HW
+
+go to https://the-internet.herokuapp.com/dynamic_controls
+click on checkbox and click on remove
+verify the text
+click on enable verify the textbox is enabled
+enter text and click disable
+verify the textbox is disabled
+
+Build functions (methods) to open and close browsers
