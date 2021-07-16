@@ -10,7 +10,7 @@ public class JsExecutorDemo3 {
     public static String url="http://google.com";
 
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver1.exe");
         WebDriver driver = new ChromeDriver();
         driver.get(url);
 

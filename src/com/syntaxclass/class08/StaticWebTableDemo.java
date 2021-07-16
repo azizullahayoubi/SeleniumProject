@@ -11,7 +11,7 @@ import java.util.List;
 public class StaticWebTableDemo {
     static String url="http://syntaxtechs.com/selenium-practice/table-search-filter-demo.php";
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver1.exe");
         WebDriver driver = new ChromeDriver();
         driver.get(url);
        List<WebElement> rowData= driver.findElements(By.xpath("//table[@id='task-table']/tbody/tr"));

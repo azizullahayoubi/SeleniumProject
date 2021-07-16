@@ -10,13 +10,16 @@ public class JSExecutorDemo {
     public static String url="http://amazon.com";
 
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver1.exe");
         WebDriver driver = new ChromeDriver();
         driver.get(url);
 
         JavascriptExecutor js= (JavascriptExecutor)driver;
+        Thread.sleep(2000);
         js.executeScript("window.scrollBy(0, 500)");
+        Thread.sleep(2000);
         js.executeScript("window.scrollBy(0, -500)");
+        Thread.sleep(2000);
         WebElement backtotop= driver.findElement(By.xpath("//span[contains(text(),'Back to top')]"));
         js.executeScript("arguments[0].scrollIntoView(true)",backtotop);
 

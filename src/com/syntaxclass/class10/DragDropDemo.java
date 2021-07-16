@@ -8,7 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class DragDropDemo {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","drivers/chromedriver1.exe");
         WebDriver driver =new ChromeDriver() ;
         driver.get("https://jqueryui.com/droppable/");
         driver.manage().window().maximize();

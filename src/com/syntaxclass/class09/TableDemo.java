@@ -6,14 +6,14 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class TableDemo {
+public class TableDemo extends OpenCloseQuitDriver {
     public static void main(String[] args) {
         OpenCloseQuitDriver openCloseQuitDriver=new OpenCloseQuitDriver();
 
         openCloseQuitDriver.openDriver("http://syntaxtechs.com/selenium-practice/table-pagination-demo.php");
-        List<WebElement> tableRows=openCloseQuitDriver.driver.findElements(By.xpath("//table[@class='table table-hover']/tbody/tr"));
+        List<WebElement> tableRows= driver.findElements(By.xpath("//table[@class='table table-hover']/tbody/tr"));
 
-        WebElement nextButton=openCloseQuitDriver.driver.findElement(By.xpath("//a[@class='next_link']"));
+        WebElement nextButton= driver.findElement(By.xpath("//a[@class='next_link']"));
          boolean flag=true;
          while (flag){
              for (WebElement  tableRow:tableRows){
